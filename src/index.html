@@ -1,64 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css" >
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/angularjs-gauge@2.2.0/dist/angularjs-gauge.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/angularjs-gauge@2.2.0/dist/angularjs-gauge.min.js"></script>
+  <link rel="stylesheet" href="styles.css" >
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-        <div ng-app="yourApp">
-            <ul>
-                    <li><a class="active" href="#home">Log Out</a></li>
+    <div>
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" img src="logo.png" alt="logo" width="5" height="30" />VertureX :Prototype</b></a>
+                  </div>
+                  
+                  <ul class="nav navbar-nav navbar-right">
                     <li><a href="#news">Hello ,16@test.com</a></li>
-                    <p class="websiteName"><b><img src="logo.png" alt="logo" width="5" height="30" />VertureX :Prototype</b></p>
-            </ul>
-                
-            <img src="foto.jpg" alt="Foto" >
-            <div class="boxed">
-                    <h2><b><font size="3">Market</font></b>&emsp;<font size="2">Fill in who are your customers?</font><br> 
-                    <h2><b><font size="3">pain</font></b>&emsp;<font size="2">What is the pain statment that you are trying to solve<br>for them?</font><br>     
-                    <h2><b><font size="3">Benefit</font></b>&emsp;<font size="2">What is the benefit that will match that pain<br>statment?</font>  
-
-                    <button type="button" class="btn btn-default" style="float: right">Edit Profile</button>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign out</a></li>
+                  </ul>
                 </div>
-                <p class="venturX"><font size="6">How is<b>VenturX&nbsp;<span class="glyphicon glyphicon-pencil"></span>&nbsp;</b>doing today?</font><b><font size="3"><font color="gray">check dashboard </font></b></p>
+              </nav>
+        <div class="container">
+             
+              <img src="foto.jpg" class="img-thumbnail" alt="Cinque Terre" width="150" height="200" margin-left="250"> 
+              </div>
+              <div class="panel panel-default" >
+                    <div class="panel-body">
+                            <b><font size="3px">Market</font></b>&emsp;<font size="2px">Fill in who are your customers?</font><br> 
+                            <h2><b><font size="3px">pain</font></b>&emsp;<font size="2px">What is the pain statment that you are trying to solve<br>for them?</font><br>     
+                            <h2><b><font size="3px">Benefit</font></b>&emsp;<font size="2px">What is the benefit that will match that pain<br>statment?</font>  
+        
+                            <button type="button" class="btn btn-default" style="float: right">Edit Profile</button>
+                    </div>
+                    
+                  </div>
+                  <div class="panel-heading"><font size="6">How is<b>VenturX&nbsp;<span class="glyphicon glyphicon-pencil"></span>&nbsp;</b>doing today?</font><b><font size="3"><font color="gray">check dashboard </font></b></div>
 
-
-    
-            <ng-gauge size="150" type="full" thick="5" 
-                min="0" max="127" value="27" 
-                cap="round" label="Product" append="%"
-                foreground-color="#FF8000" background-color="#EEE" >
-            </ng-gauge>
-
-            <ng-gauge size="150" type="full" thick="5" 
-                min="0" max="30" value="3" 
-                cap="round" label="Runway" append="month"
-                foreground-color="#FF0000" background-color="#EEE"  margin-left=15px;>
-            </ng-gauge>
-
-            <ng-gauge size="150" type="full" thick="5" 
-                min="0" max="124" value="24" 
-                cap="round" label="conversion" append="%"
-                foreground-color="#FE642E" background-color="#EEE" margin-left=15px;>
-            </ng-gauge>
-
-            <ng-gauge size="150" type="full" thick="5" 
-                    min="0" max="100" value="100" 
-                    cap="round" label="Engagement" append="%"
-                    foreground-color="#80FF00" background-color="#EEE"  margin-left=50px;>
-            </ng-gauge>
+        <div class="container">
+ 
+ 
+                <div class="col-sm-4">
+                  
+                </div>
+                <div class="col-sm-4">
+                
+                  <div ng-app="yourApp">
+                        <ng-gauge size="150" type="full" thick="5" 
+                            min="0" max="127" value="27" 
+                            cap="round" label="Product" append="%"
+                            foreground-color="#FF8000" background-color="#EEE" >
+                        </ng-gauge>
             
-            <p class="conversation"><b>Small conversation?&nbsp;</b>learn what you can do<b>to raise your conversion</b></p>
-            <p class="produce"><b>Low produce score?&nbsp;try this&nbsp;</b>to get more</p>
-        </div>
-    <script>
-        angular.module('yourApp', ['angularjs-gauge']);
-    </script>
-</body>
+                        <ng-gauge size="150" type="full" thick="5" 
+                            min="0" max="30" value="3" 
+                            cap="round" label="Runway" append="month"
+                            foreground-color="#FF0000" background-color="#EEE"  margin-left=15px;>
+                        </ng-gauge>
+            
+                        <ng-gauge size="150" type="full" thick="5" 
+                            min="0" max="124" value="24" 
+                            cap="round" label="conversion" append="%"
+                            foreground-color="#FE642E" background-color="#EEE" margin-left=15px;>
+                        </ng-gauge>
+            
+                        <ng-gauge size="150" type="full" thick="5" 
+                                min="0" max="100" value="100" 
+                                cap="round" label="Engagement" append="%"
+                                foreground-color="#80FF00" background-color="#EEE"  margin-left=50px;>
+                        </ng-gauge>
+                        
+
+                    </div>
+                <script>
+                    angular.module('yourApp', ['angularjs-gauge']);
+                </script>
+                  
+                </div>
+                <div class="col-sm-4">
+                        
+                </div>
+              
+              </div>
+            </div>
+            <div class="container">
+            
+                      <div class="panel-footer" style="background-color: rgba(252, 246, 249, 0.986);"><b><font color=" rgb(24, 53, 6)">Small conversation?&nbsp;</b>learn what you can do<b>to raise your conversion</font></b></div>
+
+            </div><br>      
+                    
+             
+                 
+            <div class="container" >
+            
+                    <div class="panel-footer" style="background-color: rgb(245, 227, 239);"><b><font color="rgb(221, 90, 107)">Low produce score?&nbsp;try this&nbsp;</b>to get more</font></div>
+
+          </div>  
+                  
+    
+        </body>
+
 </html>
