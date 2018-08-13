@@ -1,10 +1,13 @@
 .panel-default {
     margin-top: -180px;;
     margin-right: 50px;
-    margin-left: 350px;
+    margin-left: 200px;
     display: block;
     line-height:.05px; 
+    width: 700px;
+    height: 200px;
 }
+
 .panel-heading{
     
     margin-left:350px;
